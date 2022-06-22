@@ -27,7 +27,7 @@ steps:
   
 substitutions:
     #GCP Specific configuration. 
-    _PROJECT: shivam779823
+    _PROJECT: qwiklabs-gcp-02-757fe38984af
     _ZONE: us-central1-a
     _GKE_CLUSTER: vote-cluster
     
