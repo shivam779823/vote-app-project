@@ -4,7 +4,7 @@ metadata:
   labels:
     app: result
   name: result
-  namespace: vote
+  
 spec:
   replicas: 1
   selector:
@@ -16,7 +16,7 @@ spec:
         app: result
     spec:
       containers:
-      - image: nginx
+      - image: shiva9921/result:v1
         name: result
         ports:
         - containerPort: 80
