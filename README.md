@@ -19,8 +19,14 @@ The folder k8s contains the yaml specifications of the Voting App's services.
 
 
 Run the following command to create the deployments and services objects: (manually)
+
+
 ```
+```
+
 $ kubectl create -f k8s/
+```
+
 deployment "db" created
 service "db" created
 deployment "redis" created
@@ -30,7 +36,8 @@ service "result" created
 deployment "vote" created
 service "vote" created
 deployment "worker" created
-```
+
+
 
 The vote interface is then available on port 31000 on each host of the cluster, the result one is available on port 31001.
 
@@ -39,12 +46,13 @@ CI/CD
 
 Git -> Github/SCM -> Cloud Build -> Google kubernetes Engine 
 ```
-1) gcloud container clusters create vote-cluster --zone us-central-a
-1) Create trigger on cloud Buid for cloudbuild.yaml file
-2) git Push code 
-3) Kubectl get svc 
-4) vist External Ip of vote-app
-5) vist External IP of Result app in (new tab)
+1) gcloud container clusters create vote-cluster --zone us-central1-a
+2) Create trigger on cloud Buid for cloudbuild.yaml file
+3) git push code 
+4) Kubectl get svc 
+5) vist External Ip of vote-app
+6) vist External IP of Result app in (new tab)
+
 ``` 
 
 Architecture
