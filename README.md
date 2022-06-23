@@ -7,7 +7,6 @@ Getting started
 ---------------
 
 
-```
 
 The app will be running at [http://localhost:5000](http://localhost:5000), and the results will be at [http://localhost:5001](http://localhost:5001).
 
@@ -20,8 +19,6 @@ The folder k8s contains the yaml specifications of the Voting App's services.
 
 Run the following command to create the deployments and services objects: (manually)
 
-
-```
 ```
 
 $ kubectl create -f k8s/
